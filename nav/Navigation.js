@@ -13,16 +13,16 @@ const Navigation = () => {
     const Stack = createNativeStackNavigator();
     return (
         <NavigationContainer>
-            <Stack.Navigator screenOptions={{headerShown: false}}>
-                    <Stack.Screen name="Onboard" component={OnboardScreen} />
+            <Stack.Navigator screenOptions={{headerShown: true}}>
+                    <Stack.Screen name="Onboard" component={OnboardScreen}  options={{ headerShown: false }}/>
                     {user ? (
                     <>
                         <Stack.Screen name="AppNav" component={AppNav} />
                     </>
                     ) : (
                     <>
-                        <Stack.Screen name="Login" component={LoginScreen} />
-                        <Stack.Screen name="CreateAccount" component={CreateAccountScreen} />
+                        <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login' }}/>
+                        <Stack.Screen name="CreateAccount" component={CreateAccountScreen} options={{ title: 'Create your account' }}/>
                     </>
                     )}
             </Stack.Navigator>
