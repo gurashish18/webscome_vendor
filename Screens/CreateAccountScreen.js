@@ -8,8 +8,7 @@ import { useNavigation } from '@react-navigation/native'
 const CreateAccountScreen = () => {
     const navigation = useNavigation()
     const handleSignup = () => {
-        console.warn("Sign up!!!")
-        // navigation.navigate("BottomTab")
+        navigation.navigate("WorkerInfo")
     }
     const handleSingupFacebook = () => {
         console.warn("Facebook Sign up!!!")

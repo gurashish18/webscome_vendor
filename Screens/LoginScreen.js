@@ -8,8 +8,7 @@ import { useNavigation } from '@react-navigation/native'
 const LoginScreen = () => {
     const navigation = useNavigation()
     const handleLogin = () => {
-        console.warn("Logged in !!!")
-        // navigation.navigate("BottomTab")
+        navigation.navigate("AppNav")
     }
     const handleLoginFacebook = () => {
         console.warn("Facebook Logged in !!!")
