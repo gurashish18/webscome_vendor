@@ -240,3 +240,46 @@ export const profiledata = [
     icon: 'attach-money'
   },
 ]
+
+export const nearbyjobs = [
+  {
+    id: '1',
+    address: '55/4, Ballygunge Circular Rd',
+    jobtype: 'Electrician',
+    amount: 299,
+    time: '2:00 pm',
+    date: 'Tomorrow'
+  },
+  {
+    id: '2',
+    address: '55/4, Ballygunge Circular Rd',
+    jobtype: 'Plumber',
+    amount: 199,
+    time: '4:00 pm',
+    date: '2/01/2022'
+  },
+  {
+    id: '3',
+    address: '55/4, Ballygunge Circular Rd',
+    jobtype: 'Plumber',
+    amount: 199,
+    time: '4:00 pm',
+    date: '2/01/2022'
+  },
+  {
+    id: '4',
+    address: '55/4, Ballygunge Circular Rd',
+    jobtype: 'Plumber',
+    amount: 199,
+    time: '4:00 pm',
+    date: '2/01/2022'
+  },
+  {
+    id: '5',
+    address: '55/4, Ballygunge Circular Rd',
+    jobtype: 'Plumber',
+    amount: 199,
+    time: '4:00 pm',
+    date: '2/01/2022'
+  },
+]
