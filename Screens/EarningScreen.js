@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import Button from '../components/Button'
+import { useNavigation } from '@react-navigation/native'
 
 const EarningScreen = () => {
+    const navigation = useNavigation()
     const[fourhrs, setfourhrs] = useState(false)
     const[sixhrs, setsixhrs] = useState(true)
     const[eighthrs, seteighthrs] = useState(false)
@@ -30,7 +33,7 @@ const EarningScreen = () => {
         setamount('35,400')
     }
     return (
-        <View style={{flex: 1, alignItems: 'center', justifyContent: "space-around"}}>
+        <View style={{flex: 1, alignItems: 'center', justifyContent: "space-around", backgroundColor: '#ffffff'}}>
             <View style={{flexDirection: 'column', alignItems: 'center'}}>
                 <Image source={require('../assets/rupee.png')} style={{height: 100, width: 100, resizeMode: 'contain'}}/>
                 <Text style={{color: '#1A0F91', fontSize: 25, fontWeight: 'bold'}}>You Can Earn</Text>
@@ -52,6 +55,8 @@ const EarningScreen = () => {
                     </TouchableOpacity>
                 </View>
             </View>
+
+            <Button buttontext="Continue" onPress={()=>navigation.navigate("AppNav")}/>
         </View>
     )
 }

@@ -195,3 +195,48 @@ export const jobs = [
       name: 'Car Service',
   },
 ]
+
+export const profiledata = [
+  {
+    id: '1',
+    title: 'Training Center',
+    text: 'Videos about how start with WC',
+    icon: 'handyman'
+  },
+  {
+    id: '2',
+    title: 'Add Helpers',
+    text: '',
+    icon: 'note-add'
+  },
+  {
+    id: '4',
+    title: 'Personal Details',
+    text: 'Name, Email, Phone number etc.',
+    icon: 'person-add'
+  },
+  {
+    id: '5',
+    title: 'Onboarding Documents',
+    text: 'Pan, Address Proof, Documents for loan',
+    icon: 'plagiarism'
+  },
+  {
+    id: '6',
+    title: 'Verify vaccination status',
+    text: 'Important for your and customer saftey',
+    icon: 'verified'
+  },
+  {
+    id: '7',
+    title: 'Award and certificate photos',
+    text: 'Add your awards and certificates here',
+    icon: 'stars'
+  },
+  {
+    id: '8',
+    title: 'Bank details',
+    text: 'Payout will be deposit in this account',
+    icon: 'attach-money'
+  },
+]
