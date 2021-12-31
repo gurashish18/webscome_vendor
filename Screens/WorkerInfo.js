@@ -4,11 +4,13 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 import { jobs, states } from '../API/api';
 import SearchableDropdown from 'react-native-searchable-dropdown';
 import Button from '../components/Button'
+import { useNavigation } from '@react-navigation/native'
 
 const WINDOW_WIDTH = Dimensions.get("window").width
 const CARD_WIDTH = Math.round(WINDOW_WIDTH)
 
 const WorkerInfo = () => {
+    const navigation = useNavigation()
     const [name, setname] = useState('')
     const [job, setjob] = useState('Select your job here...')
     const [state, setstate] = useState('Select your area here...')
@@ -107,7 +109,7 @@ const WorkerInfo = () => {
                     />
             </View>
 
-            <Pressable style={styles.btncontainer}>
+            <Pressable style={styles.btncontainer} onPress={()=>navigation.navigate("Earning")}>
                 <Text style={styles.btntext}>Continue</Text>
             </Pressable>
         </View>
