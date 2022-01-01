@@ -26,7 +26,7 @@ const LoginScreen = () => {
                 
                 <Button onPress={handleLogin} buttontext="Login"/>
 
-                <Pressable onPress={()=>navigation.navigate("")} style={styles.container2}>
+                <Pressable onPress={()=>navigation.navigate("OTPlogin")} style={styles.container2}>
                     <Text style={styles.text2}>Login via OTP</Text>
                 </Pressable>
 

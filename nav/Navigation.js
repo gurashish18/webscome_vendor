@@ -6,6 +6,8 @@ import LoginScreen from '../Screens/LoginScreen'
 import CreateAccountScreen from '../Screens/CreateAccountScreen'
 import WorkerInfo from '../Screens/WorkerInfo'
 import EarningScreen from '../Screens/EarningScreen'
+import OTPloginScreen from '../Screens/OTPloginScreen';
+import OTPverifyScreen from '../Screens/OTPverifyScreen';
 import AppNav from './AppNav'
 
 
@@ -24,6 +26,8 @@ const Navigation = () => {
                     <>
                         <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login' }}/>
                         <Stack.Screen name="CreateAccount" component={CreateAccountScreen} options={{ title: 'Create your account' }}/>
+                        <Stack.Screen name="OTPlogin" component={OTPloginScreen} options={{ title: 'OTP Login' }}/>
+                        <Stack.Screen name="OTPverify" component={OTPverifyScreen} options={{ title: 'Verify OTP' }}/>
                         <Stack.Screen name="WorkerInfo" component={WorkerInfo} options={{ title: 'Tell us about yourself' }}/>
                         <Stack.Screen name="Earning" component={EarningScreen} options={{ headerShown: false }}/>
                         <Stack.Screen name="AppNav" component={AppNav}  options={{ headerShown: false }}/>
