@@ -244,6 +244,11 @@ export const profiledata = [
 export const nearbyjobs = [
   {
     id: '1',
+    imageuri: require('../assets/icons/3.png'),
+    coordinates: {
+      latitude: 30.338430,
+      longitude: 76.830093, 
+    },
     address: '55/4, Ballygunge Circular Rd',
     jobtype: 'Electrician',
     amount: 299,
@@ -252,30 +257,50 @@ export const nearbyjobs = [
   },
   {
     id: '2',
-    address: '55/4, Ballygunge Circular Rd',
-    jobtype: 'Plumber',
-    amount: 199,
+    imageuri: require('../assets/icons/6.png'),
+    coordinates: {
+      latitude: 30.351706,
+      longitude: 76.832868, 
+    },
+    address: '#73, Sector 10, Ballygunge Circular Rd',
+    jobtype: 'RO Service',
+    amount: 99,
     time: '4:00 pm',
     date: '2/01/2022'
   },
   {
     id: '3',
+    imageuri: require('../assets/icons/12.png'),
+    coordinates: {
+      latitude: 30.351706,
+      longitude: 76.832868, 
+    },
     address: '55/4, Ballygunge Circular Rd',
-    jobtype: 'Plumber',
+    jobtype: 'Car Service',
     amount: 199,
-    time: '4:00 pm',
-    date: '2/01/2022'
+    time: '11:00 am',
+    date: '3/01/2022'
   },
   {
     id: '4',
+    imageuri: require('../assets/icons/1.png'),
+    coordinates: {
+      latitude: 30.351706,
+      longitude: 76.832868, 
+    },
     address: '55/4, Ballygunge Circular Rd',
-    jobtype: 'Plumber',
-    amount: 199,
-    time: '4:00 pm',
+    jobtype: 'AC Service',
+    amount: 99,
+    time: '1:00 pm',
     date: '2/01/2022'
   },
   {
     id: '5',
+    imageuri: require('../assets/icons/3.png'),
+    coordinates: {
+      latitude: 30.351706,
+      longitude: 76.832868, 
+    },
     address: '55/4, Ballygunge Circular Rd',
     jobtype: 'Plumber',
     amount: 199,
